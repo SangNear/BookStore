@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="google-site-verification" content="rfw8zoXdaAm4WJwn6UJ3YHWK2s2ydjh4rITq6EJxHIk" />
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-121228995-1', 'auto');
+        ga('require', 'GTM-MVC85VF');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Google Tag Manager
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M7ZNHBN');</script>
+
+
+    <!- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+        '../connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '944580138890524');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - AdWords: 950135383  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-950135383"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-950135383');
+    </script>
+    <!-- Send tracking allapges -->
+    <script>
+        gtag('event', 'page_view', {
+            'send_to': 'AW-950135383',
+            'dynx_pagetype': 'Allpages',
+        });
+    </script>
+    <!-- End Global site tag  -->
+    <title>
+        Trang chủ 
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=vietnamese' rel='stylesheet' type='text/css'>
+    <link href="~/Content/css551f.css" rel="stylesheet" />
+
+
+    <script src="bundles/modernizr8fce?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript)
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7ZNHBN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Global site tag (gtag.js) - Google Analytics remove to included Optimized
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121228995-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121228995-1');
+    </script>
+    <!-- End Google Analytics -->
+    <div class="page ">
+
+        <div class="header">
+
+            <div class="topbar hidden-mobile">
+                <div class="wrapper">
+                    <div class="clearfix">
+
+                        <ul class="topnav">
+                            <li><a href="~/Layout/Index">Trang chủ</a></li>
+
+                            
+
+                            
+                            <li>
+                                <a href="~/Admin/Dangnhap">Đăng nhập hệ thống quản trị</a>
+                            </li>
+                        </ul>
+
+                        <ul class="topprofile">
+                            
+                            <li>
+                                <a href="~/Layout/Dangnhap">Đăng nhập </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="wrapper wrap">
+
+
+                
+
+                
+                    @Html.Action("GiohangPartial", "Giohang")
+                
+                <div class="search">
+                    <form action="http://nhanam.com.vn/tim-kiem" method="GET">
+
+                        <input type="text" name="q" placeholder="Tìm kiếm sách..." class="text" />
+                        <input type="submit" value="Tìm kiếm" class="submit" />
+                    </form>
+
+                </div>
+
+
+                <span class="openmenu-icon"></span>
+                <span class="opensearch-icon"></span>
+            </div>
+
+        </div>
+
+
+
+        <div id="mainnav">
+
+            <div class="wrapper">
+
+                <ul class="menu clearfix">
+                    <li>
+                        <a href="sach-moi-xuat-ban.html">
+                            Danh mục sách
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="chuyen-muc/1/van-hoc-viet-nam.html">
+                                    Văn học Việt Nam
+                                </a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="~/Layout/Tieuthuyet">
+                                            Tiểu thuyết
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/3/truyen-ngan.html">
+                                            Truyện ngắn
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/4/tho-kich.html">
+                                            Thơ / Kịch
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/5/hoi-ky-phe-binh-tieu-luan.html">
+                                            Hồi k&#253; / Ph&#234; B&#236;nh / Tiểu luận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/6/tap-but-tan-van.html">
+                                            Tạp b&#250;t / Tản văn
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/7/van-hoc-nuoc-ngoai.html">
+                                    Văn học Nước Ngo&#224;i
+                                </a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="chuyen-muc/8/duong-dai.html">
+                                            Đương đại
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/9/lang-man.html">
+                                            L&#227;ng mạn
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/10/trinh-tham-kinh-di.html">
+                                            Trinh th&#225;m / Kinh dị
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/11/kiem-hiep.html">
+                                            Kiếm hiệp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/12/kinh-dien.html">
+                                            Kinh điển
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/13/tho-kich.html">
+                                            Thơ / Kịch
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/14/hoi-ky-tieu-luan.html">
+                                            Hồi k&#253; / Tiểu luận
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/15/huyen-ao-gia-tuong.html">
+                                            Huyền ảo / Giả tưởng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/16/tan-van-tap-but.html">
+                                            Tản văn / Tạp b&#250;t
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/17/thieu-nhi.html">
+                                    Thiếu nhi
+                                </a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="chuyen-muc/18/tuoi-teen.html">
+                                            Tuổi teen
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/19/truyen-tranh.html">
+                                            Truyện tranh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/20/thieu-nhi.html">
+                                            Thiếu nhi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/21/thoi-su---chinh-tri.html">
+                                    Thời sự - Ch&#237;nh trị
+                                </a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="chuyen-muc/22/hoi-ky-tu-truyen.html">
+                                            Hồi k&#253; / Tự truyện
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/23/the-gioi-hien-dai.html">
+                                            Thế giới hiện đại
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/25/khoa-hoc-tu-nhien---nhan-van.html">
+                                    Khoa học tự nhi&#234;n - Nh&#226;n văn
+                                </a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="chuyen-muc/26/lich-su.html">
+                                            Lịch sử
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/27/triet-hoc.html">
+                                            Triết học
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/28/tam-ly-hoc.html">
+                                            T&#226;m l&#253; học
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/29/kinh-te.html">
+                                            Kinh tế
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/30/vu-tru.html">
+                                            Vũ trụ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="chuyen-muc/31/sinh-hoc.html">
+                                            Sinh học
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/32/tham-khao.html">
+                                    Tham khảo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/43/giam-gia-dac-biet.html">
+                                    Giảm gi&#225; đặc biệt
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/44/sach-tai-ban.html">
+                                    S&#225;ch t&#225;i bản
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chuyen-muc/45/dat-truoc-sach.html">
+                                    Đặt trước s&#225;ch
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <!-- <li>
+                        <a href="/combo-sach">Combo Sách</a>
+                    </li> -->
+
+                    <li>
+                        <a href="chuyen-muc/42/sach-ban-chay.html">Sách bán chạy</a>
+                    </li>
+
+                    <li>
+                        <a href="tin-tuc/14/chuong-trinh-khuyen-mai.html">Chương trình khuyến mãi</a>
+                    </li>
+
+                    <li>
+                        <a href="chuyen-muc/43/giam-gia-dac-biet.html">Giảm giá đặc biệt</a>
+                    </li>
+
+
+
+                    <li class="show-mobile"><a href="tin-tuc/5/gioi-thieu.html">Giới thiệu</a></li>
+
+                    <li class="show-mobile"><a href="~/Views/Admin/Sach.cshtml">Quản lý sản phẩm</a></li>
+
+                    <li class="show-mobile"><a href="kiem-tra-don-hang.html">Kiểm tra đơn hàng</a></li>
+                    <li class="show-mobile">
+                        <a href="dang-ky.html">Đăng ký</a>
+                    </li>
+                    <li class="show-mobile">
+                        <a href="NguoiDung1/Dangnhap">Đăng nhập</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <a href="combo-sach-16928/bo-cuon-sach-dau-doi-tuyet-dep.html">
+                        <img src="../static.nhanam.com.vn/thumb/0x0/crop/Features/Images/2019/4/25/6HHNAJ7E.jpg" alt="Bộ cuốn s&#225;ch đầu đời" />
+
+                    </a>
+                    <a href="combo-sach-14718/bo-cam-nang-thien-tai-tre.html">
+                        <img src="../static.nhanam.com.vn/thumb/0x0/crop/Features/Images/2018/9/13/OJ4M48Q3.jpg" alt="Bộ cẩm nang thi&#234;n t&#224;i trẻ (4 quyển)" />
+
+                    </a>
+                    <a href="combo-sach-14716/bo-ehon-nong-am-cua-yoko-imoto.html">
+                        <img src="~../static.nhanam.com.vn/thumb/0x0/crop/Features/Images/2018/9/13/3XSUDF44.jpg" alt="Bộ Ehon nồng ấm của Yoko Imoto( 4 quyển)" />
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+            
+            
+
+            <div>
+                @RenderBody()
+            </div>
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="wrapper">
+
+                <div class="footermenu clearfix">
+                    <div class="col">
+
+                        <ul>
+                            <li><a href="tin-tuc/5/gioi-thieu.html">Giới thiệu</a></li>
+                            <li><a href="tin-tuc/9/chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                            <li><a href="tin-tuc/10/chinh-sach-van-chuyen.html">Chính sách vận chuyển</a></li>
+                            <li><a href="tin-tuc/12/hinh-thuc-thanh-toan.html"> Hình thức thanh toán</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col">
+
+                        <ul>
+                            <li><a href="tin-tuc/11/quy-dinh-doi-tra-huy-don-hang.html">Quy định đổi, trả và huỷ đơn hàng</a></li>
+                            <li><a href="tin-tuc/7/huong-dan-dat-hang.html">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="tin-tuc/8/lien-he.html">Liên hệ</a></li>
+
+                            <li><a href="tin-tuc/19/thong-bao.html">Thông báo</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="socialbtn">
+                        <a class="facebook" href="https://www.facebook.com/nhanampublishing">
+                            Facebook
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="copyright">
+
+                <div class="wrapper">
+                   WEBSITE BÁN SÁCH || NGUYỄN LÂM SANG
+                    <br />
+                    
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="bundles/jquery50b7?v=GG-4HyEmsS9lf7nSJLxMi0faVbJq7oLB9CRxhCA85Lw1"></script>
+
+
+    <script src="bundles/jqueryvaldf6f?v=dIxkPTGjHelWlu_QFt2d2XI2038hTpVy3tEgsiHm_2M1"></script>
+
+
+
+
+    <script type="text/javascript">
+
+        $().ready(function () {
+
+
+            $.get('/Home/SendCK', function (res) {
+                console.log(res);
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+
+
+
+
+</html>

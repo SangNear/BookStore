@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Dangnhap";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div class="container">
+
+
+
+
+
+
+    <div class="bookdetailwrap">
+
+        <header class="pageheader">
+            <h1>Đăng nhập</h1>
+        </header>
+
+
+        <article class="form">
+
+
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+                <p>
+
+                    <label for="Email">Email</label>
+
+                    <input data-val="true" data-val-email="Sai định dạng Email" data-val-required="*" id="Email" name="Email" type="text" value="" />
+                    <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+
+                </p>
+                <p>
+
+                    <label for="Password">Mật khẩu</label>
+
+                    <input data-val="true" data-val-required="*" id="Password" name="Password" type="password" />
+                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+
+                </p>
+                <p>
+
+                    <label>
+                        <input class="check-box" data-val="true" data-val-required="The Ghi nhớ field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />  Ghi nhớ
+
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" class="btn" value="Đăng nhập" />
+                </p>
+            }
+
+
+        </article>
+
+
+
+
+
+
+
+    </div>
+</div>
+

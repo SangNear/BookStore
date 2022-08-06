@@ -1,0 +1,59 @@
+﻿@using WebSiteBanSach.Models
+@model List<Giohang>
+@{
+    ViewBag.Title = "ĐƠN ĐẶT HÀNG";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div class="container">
+    <div class="bookdetailwrap">
+        
+        </table>
+        <h2 style="text-align:center"> THÔNG TIN KHÁCH HÀNG</h2>
+        @{KHACHHANG kh = (KHACHHANG)Session["Taikhoan"];
+          }
+        <table align="center">
+            @using (Html.BeginForm())
+            {
+                <p>
+
+                    <label for="NAME">HỌ TÊN KHÁCH HÀNG</label>
+
+                    <input  type="text" value="" />
+                   
+
+                </p>
+                <p>
+
+                    <label for="PHONE">ĐIỆN THOẠI</label>
+
+                    <input type="text" value="" />
+
+
+                </p>
+                <p>
+
+                    <label for="DIACHI">ĐỊA CHỈ</label>
+
+                    <input type="text" value="" />
+
+
+                </p>
+                
+             
+                <tr style="height:40px">
+                    <td></td>
+                    <td>
+                        <li>
+                            <a href="~/Giohang/Xacnhandonhang">ĐẶT HÀNG </a>
+                        </li>
+                    </td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</div>
+
+
+

@@ -1,0 +1,99 @@
+﻿@model WebSiteBanSach.Models.SACH
+
+@{
+    ViewBag.Title = "Xoasp";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container">
+    <div class="bookdetailwrap">
+        <h2>XÁC NHẬN THÔNG TIN </h2>
+        <br /> <br />
+        <h3>BẠN CÓ CHẮC LÀ MUỐN XÓA SẢN PHẨM NÀY?</h3>
+        <div>
+            
+            <hr />
+            <dl class="dl-horizontal">
+                <dt style="font-weight:bold">
+                    TÊN SÁCH
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Tensach)
+                </dd>
+                <br /> <br />
+
+                <dt style="font-weight:bold">
+                    GIÁ BÁN
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Giaban)
+                </dd>
+                <br />
+                <br />
+                <dt style="font-weight:bold">
+                    MÔ TẢ
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Mota)
+                </dd>
+                <br />
+                <br />
+                
+
+                <dd>
+                    <img style="width:300px" src="@Url.Content("~/image/" + Model.Anhbia)" />
+                </dd>
+                <br />
+                <br />
+                <dt style="font-weight:bold">
+                    NGÀY CẬP NHẬT
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Ngaycapnhat)
+                </dd>
+                <br />
+                <br />
+                <dt style="font-weight:bold">
+                    SỐ LƯỢNG TỒN
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Soluongton)
+                </dd>
+                <br />
+                <br />
+                <dt style="font-weight:bold">
+                    CHỦ ĐỀ
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MaCD)
+                </dd>
+                <br />
+                <br />
+                <dt style="font-weight:bold">
+                    NHÀ XUẤT BẢN
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MaNXB)
+                </dd>
+                <br />
+                <br />
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Xóa" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Sach")
+                </div>
+            }
+        </div>
+    </div>
+</div>

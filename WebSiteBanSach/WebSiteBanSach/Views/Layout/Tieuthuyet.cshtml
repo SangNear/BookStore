@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Tieuthuyet";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 class="pagetitle">
+    <a href="sach-moi-xuat-ban.html">
+        TIỂU THUYẾT
+
+    </a>
+
+</h1>
+<div class="container">
+    <ul class="listbook clearfix">
+        @foreach (var sach in Model)
+        {
+
+
+            <li class="book  bookimage0">
+                <div class="wrap">
+                    <a href="@Url.Action("Details" ,"Layout", new { id = sach.Masach} )">
+                        <img src="~/image/@sach.Anhbia" height="222px" float="left" />
+
+                    </a>
+                    <div class="popup">
+                        <h1 style="color: #cf6b50; font-size: 12px;text-transform: uppercase;">
+
+                            @sach.Tensach
+
+                        </h1>
+                        <div class="description"><ul><li>Số trang: 420</li><li>Kích thước: 14 x 20.5cm</li><li>@sach.Ngaycapnhat</li></ul></div>
+                        <p class="price">
+                            @sach.Giaban
+
+                            <span class="old">135.000đ</span>
+                        </p>
+                        <a href="@Url.Action("ThemGiohang", "GioHang", new {@iMasach = @sach.Masach, @strURL=Request.Url.ToString() })" class="addtocart">
+                            Thêm vào giỏ hàng
+                        </a>
+                        <a href="javascript:;" class="buynow" data-id="22415" data-state="0">Mua ngay</a>
+
+                    </div>
+
+
+                </div>
+            </li>
+
+
+
+        }
+    </ul>
+</div>
+
+

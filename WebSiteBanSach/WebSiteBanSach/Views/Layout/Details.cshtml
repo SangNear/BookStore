@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<div class="container">
+    <div class="bookdetailwrap">
+        <div class="bookdetail clearfix">
+            <a class="image image0" href="nguoi-dua-thu-tinh.html">
+
+                <img src="~/image/@Model.Anhbia" alt="@Model.Tensach" />
+
+                <span class="overlay"></span>
+            </a>
+
+            <div class="info">
+
+                <h1>
+                    @Model.Tensach
+                </h1>
+
+
+
+                <div class="intro clearfix">
+
+                    <div class="attributes">
+                        <ul>
+
+                            <li class="dataattr">
+                                <span>@Model.Masach</span>
+                                <a href="#">8935235224315</a>
+                                <script>
+                                    gtag('event', 'view_item', {
+                                        'send_to': 'AW-950135383',
+                                        'dynx_itemid': '8935235224315',
+                                        'dynx_pagetype': 'conversionintent',
+                                        'dynx_totalvalue': 63200,
+                                    });
+                                </script>
+                            </li>
+
+
+
+
+                            <li class="dataattr">
+                                <span>Tác giả: </span>
+                                <a href="../../tac-gia/14276/nguyen-hoang-vu.html">Nguyễn Ho&#224;ng Vũ</a>
+                            </li>
+                            <li class="dataattr">
+                                <span>Nhà xuất bản: </span>
+                                <a href="../../nha-xuat-ban/1/hoi-nha-van.html">Hội nh&#224; văn</a>
+                            </li>
+                        </ul>
+
+                        <ul><li>Số trang: 188</li><li>Kích thước: 14x20.5 cm</li><li>@Model.Ngaycapnhat</li></ul>
+
+                        <div class="sbuttons">
+
+
+
+
+
+                            <div class="fb-like" data-href="http://nhanam.com.vn/sach/19087/nguoi-dua-thu-tinh" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="action">
+
+                        <div class="price">
+                            <p class="oldprice">
+                                Giá bìa:  <span>79.000đ</span>
+                            </p>
+                            <p>Giá bán: <span>@Model.Giaban</span> (Đã có VAT)</p>
+
+
+
+
+                        </div>
+                        <script>
+                            fbq('track', 'ViewContent', {
+                                content_name: 'Người đưa thư t&#236;nh',
+                                content_category: 'Media > Books',
+                                content_ids: ['8935235224315'],
+                                content_type: 'product',
+                                value: 63200,
+                                currency: 'VND'
+                            });
+                        </script>
+                        <div class="quantitytext">
+                            Số lượng:
+                        </div>
+
+                        <div class="quantity">
+                            <input type="text" value="1" onkeypress="return KeyPressQty(event)" class="tbQty" name="qty" id="quantity" style="color: red;">
+                            <span class="arrowBlock">
+                                <a class="upQty" href="javascript: upQtyClick();"></a>
+                                <a class="downQty" href="javascript: downQtyClick();"></a>
+                            </span>
+
+                        </div>
+
+
+                        <a href="@Url.Action("ThemGiohang", "GioHang", new {@iMasach = Model.Masach, @strURL=Request.Url.ToString() })" class="addtocart" >
+                        Thêm vào giỏ hàng
+                        </a>
+                        <a href="javascript:;" class="buynow" data-id="19087" data-state="0">Mua ngay</a>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="bookdetailblockcontent">
+            <h1> Giới thiệu sách</h1>
+            <article>
+                <p>@Model.Mota</p>
+                
+
+            </article>
+        </div>
+
+    </div>
+</div>

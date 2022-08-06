@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebSiteBanSach.Models.SACH>
+
+@helper Truncate (string input, int  length)
+{
+    if(input.Length < length)
+    {
+        @input
+}
+    else
+    {
+        @input.Substring(0,length)<text>...</text>
+    }
+}
+@{
+    ViewBag.Title = "Sach";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+
+<div class="container">
+    <div class="bookdetailwrap">
+
+
+        
+        {
+
+            <button style="float:left; text-decoration:none">
+                @Html.ActionLink("Thêm Mới", "Themmoisp")
+            </button>
+            <header class="pageheader">
+                <h1>
+                    Quản lý sản phẩm
+                </h1>
+            </header>
+
+            <div class="checkorder">
+
+                
+
+                <table>
+                    <tr>
+                        <th>Mã sách</th>
+                        <th>Tên sách</th>
+                        <th>Thế loại</th>
+                        <th>Gía bán</th>
+                        <th>Mô tả</th>
+                        <th>Ảnh bìa</th>
+                        <th>Ngày cập nhật </th>
+                        <th>Số lượng tồn</th>
+                        <th style="200px">Cập nhật</th>
+
+                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Masach)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Tensach)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaCD)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Giaban)
+                            </td>
+                            <td>
+                                @Truncate(item.Mota, 100)
+                            </td>
+                            <td>
+                                <img src="~/image/@item.Anhbia" />
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Ngaycapnhat)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Soluongton)
+                            </td>
+
+                            <td>
+                                @Html.ActionLink("SỬA", "Suasp", new { id = item.Masach })
+                                <br /><br /><br />
+
+                                @Html.ActionLink("XÓA", "Xoasp", new { id = item.Masach })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+                <div class="pager"></div>
+            </div>
+
+
+        }
+
+    </div>
+
+
+
+
+
+</div>
